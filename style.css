@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Hero Section */
+#Hero_content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url('background-image.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#Hero_content h1 {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+#Hero_content h2 {
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+    font-weight: 300;
+}
+
+#Hero_content a {
+    color: white;
+    padding: 15px 40px;
+    border: 3px solid orange;
+    background: rgba(255, 69, 0, 0.7);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#Hero_content a:hover {
+    background: red;
+    transform: scale(1.1);
+}
+
+/* Header Section */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#navbar h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: orange;
+    text-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+}
+
+#Phone a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    border: 1px solid orange;
+    border-radius: 20px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 100px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu-item h4 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #d9534f;
+}
+
+.menu-item p {
+    margin: 0 15px 15px;
+    color: #555;
+}
+
+.menu-item button {
+    background: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.menu-item button:hover {
+    background: red;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: orange;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #Hero_content h1 {
+        font-size: 2.5rem;
+    }
+    #Hero_content h2 {
+        font-size: 1.5rem;
+    }
+    #menu {
+        padding: 50px 10px;
+    }
+    .menu-item {
+        width: 90%;
+    }
+}
+#Hero_content {
+    background-image: url(photo-1677523875460-7be7f031a302.avif);
+}
